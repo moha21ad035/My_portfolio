@@ -1,0 +1,272 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+}
+body{
+    background-color: #080808;
+    color: #fff;
+
+}
+#header{
+   
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/1th_black.png);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    padding: 20px;
+    padding-left: 20px;
+    text-align: left;
+
+}
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    margin: 50px 20px;
+
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: gray;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.55s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+} 
+.main-text{
+    margin-top: 15%;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.main-text p{
+    margin-left: 10%;
+}
+.main-text span{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+}
+
+#about{
+    padding: 80px 0;
+    color: #ffff;
+}  
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.about-col1{
+    flex-basis: 35%;
+}
+.about-col1 img{
+    width: 100%;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.about-col2{
+    flex-basis: 60%;
+}
+.a{
+    font-size: 60px;
+    font-weight: 600;
+}
+.pa{
+    font-weight: 300;
+}
+.tab-tittlt{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom:-8px;
+    transition: 0.5s;
+
+}
+.tab-links.f-link::after{
+    width: 100%;
+}
+.tab-contents{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color: red;
+    font-size: 14px;
+    white-space: 3;
+}
+.tab-contents ul li i{
+    font-size: 30px;
+     margin: 10px;
+}
+.tab-contents.hello ul li span{
+    font-size: 20px;
+    margin-bottom: 30%;
+}
+.tab-contents.helll ul li span{
+    font-size: 30px;
+    margin-bottom: 30%;
+}
+.tab-contents.helll ul li a{
+    font-size: 20px;
+    margin-bottom: 30%;
+}
+#jj{
+    color: red;
+    font-size: medium;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+#Certificaion{
+    padding: 8px 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+#head{
+    color: skyblue;
+    margin-top: 20px;
+}
+#topic{
+    font-size: 23px;
+}
+#topic span{
+    font-weight: bold;
+    color: aqua;
+}
+
+
+
+/* ------education */
+
+
+#education{
+font-size: 60px;
+font-weight: bold;
+text-align: left;
+
+margin:30px 30px;
+
+}
+.education-list{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.education-list div{
+    background: #262626;
+}
+.education-list img{
+    margin-top: 10px;
+}
+.education-list span{
+    color: aquamarine;
+}
+.education-list h1{
+    font-size: -20%;
+}
+.con-left{
+    flex-basis: 45%;
+}
+.con-right{
+    flex-basis: 50%;
+
+}
+
+#contact{
+    font-weight: bold;
+    margin: 30px 40px;
+    font-size: 30px;
+}
+
+.con-left{
+    margin-top:10%;
+    margin-left: 5%;
+
+}
+.con-left p{
+    font-size: 30px;
+    color: gray;
+}
+.con-left p i{
+    color: white;
+    margin-right: 25px;
+    font-size: 25px;
+}
+.iii{
+    margin-top : 5%;
+}
+.social-me{
+    margin-top: 50px;
+}
+.social-me a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right:15px;
+    display: inline-block;
+}
+.social-me a:hover{
+    color: grey;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: gray;
+    margin-top: 15%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 15px;
+    color: #fff;
+
+}
+.btn.btn2:hover{
+    color: gray ;
+    background: white;
+    transform: translateY(-5px);
+}
+
+/* -----css for small screen---- */
